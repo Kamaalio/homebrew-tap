@@ -1,5 +1,4 @@
 set export
-set shell := ["zsh", "-c"]
 
 XCTOOLS_FORMULA := "Formula/xctools.rb"
 
@@ -17,6 +16,8 @@ formulate:
     echo $xctools_formula >> $XCTOOLS_FORMULA
 
 test-install:
+    #!/bin/zsh
+
     export HOMEBREW_NO_INSTALL_FROM_API=1
 
     brew install --build-from-source --verbose --debug $XCTOOLS_FORMULA
@@ -27,5 +28,7 @@ init-venv:
     just install-deps
 
 install-deps:
+    #!/bin/zsh
+
     . .venv/bin/activate
     pip install -r requirements.txt
