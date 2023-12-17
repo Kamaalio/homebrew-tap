@@ -5,7 +5,7 @@ XCTOOLS_FORMULA := "Formula/xctools.rb"
 default:
   just --list
 
-formulate:
+formulate: install-deps
     #!/bin/zsh
 
     . .venv/bin/activate
@@ -23,6 +23,8 @@ test-install:
     brew install --build-from-source --verbose --debug $XCTOOLS_FORMULA
 
 init-venv:
+    #!/bin/zsh
+
     python3 -m venv .venv
     . .venv/bin/activate
     just install-deps
