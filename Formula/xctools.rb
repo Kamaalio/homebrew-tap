@@ -3,8 +3,8 @@ class Xctools < Formula
 
   desc "Shiny new formula"
   homepage ""
-  url "https://files.pythonhosted.org/packages/46/ba/9b1d79ad4ccc8d78061680a68b70841afe9a74db31df8a8c4d33b27ed109/xctools_kamaalio-0.2.0.tar.gz"
-  sha256 "6d8c7fde3c95068470a4f9ed28f2e207b56729b20eca9371deb902bef8392bb4"
+  url "https://files.pythonhosted.org/packages/3d/8d/5da25a53657ecdcc9187eb7e99927fe0c8b08f4cb7822cda7e959d2cc2da/xctools_kamaalio-0.3.0.tar.gz"
+  sha256 "5c6ceb2a1f7006b3bac33e847bba8fafa3bb7fd84b3e435681e57535a305e3e4"
 
   depends_on "python3"
 
