@@ -1,2 +1,2 @@
 homebrew-pypi-poet==0.10.0
-xctools-kamaalio==0.3.0
+xctools-kamaalio==0.4.0

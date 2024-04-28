@@ -2,9 +2,9 @@ class Xctools < Formula
   include Language::Python::Virtualenv
 
   desc "Shiny new formula"
-  homepage ""
-  url "https://files.pythonhosted.org/packages/3d/8d/5da25a53657ecdcc9187eb7e99927fe0c8b08f4cb7822cda7e959d2cc2da/xctools_kamaalio-0.3.0.tar.gz"
-  sha256 "5c6ceb2a1f7006b3bac33e847bba8fafa3bb7fd84b3e435681e57535a305e3e4"
+  homepage "None"
+  url "https://files.pythonhosted.org/packages/a7/5e/56d28c17d302b1d5ed1eb77c6770b8d17a026a5a35ea486b06deffc8d972/xctools_kamaalio-0.4.0.tar.gz"
+  sha256 "41c3423e6356afb6973a683c7e43ab7faa6c9406ba724aae9b6f51450741e8a3"
 
   depends_on "python3"
 
