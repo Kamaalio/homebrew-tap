@@ -3,10 +3,10 @@ class Xctools < Formula
 
   desc "Shiny new formula"
   homepage "None"
-  url "https://files.pythonhosted.org/packages/a7/5e/56d28c17d302b1d5ed1eb77c6770b8d17a026a5a35ea486b06deffc8d972/xctools_kamaalio-0.4.0.tar.gz"
-  sha256 "41c3423e6356afb6973a683c7e43ab7faa6c9406ba724aae9b6f51450741e8a3"
+  url "https://files.pythonhosted.org/packages/12/67/60be1707053284db4641237efdc823b68322e97e230bc2ccdbbeb0aa1b0d/xctools_kamaalio-0.5.1.tar.gz"
+  sha256 "b070d6c08b4c996bd67c9bacd8947effb1b5e71ec970d50eaa1e17aae984d46a"
 
-  depends_on "python3"
+  depends_on "python@3.12"
 
   resource "click" do
     url "https://files.pythonhosted.org/packages/72/bd/fedc277e7351917b6c4e0ac751853a97af261278a4c7808babafa8ef2120/click-8.1.6.tar.gz"
@@ -19,11 +19,10 @@ class Xctools < Formula
   end
 
   def install
-    virtualenv_create(libexec, "python3")
     virtualenv_install_with_resources
   end
 
   test do
-    false
+    system bin/"xctools", "--help"
   end
 end
